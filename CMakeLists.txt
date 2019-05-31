@@ -24,3 +24,9 @@ SETUP_SAMPLE_START(TwoSum)
 		TwoSum.cpp
 	)
 SETUP_SAMPLE_END(TwoSum)
+
+SETUP_SAMPLE_START(AddTwoNumbers)
+	SET(SOURCE_FILES
+		AddTwoNumbers.cpp
+	)
+SETUP_SAMPLE_END(AddTwoNumbers)
