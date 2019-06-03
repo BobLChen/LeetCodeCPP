@@ -19,14 +19,20 @@ MACRO(SETUP_SAMPLE_END EXE_NAME)
 	ADD_EXECUTABLE(${EXE_NAME} ${SOURCE_FILES} ${HEADER_FILES} ${RESOURCE_FILES} ${EFFECT_FILES})
 ENDMACRO(SETUP_SAMPLE_END)
 
-SETUP_SAMPLE_START(TwoSum)
+SETUP_SAMPLE_START(1_TwoSum)
 	SET(SOURCE_FILES
-		TwoSum.cpp
+		1_TwoSum.cpp
 	)
-SETUP_SAMPLE_END(TwoSum)
+SETUP_SAMPLE_END(1_TwoSum)
 
-SETUP_SAMPLE_START(AddTwoNumbers)
+SETUP_SAMPLE_START(2_AddTwoNumbers)
 	SET(SOURCE_FILES
-		AddTwoNumbers.cpp
+		2_AddTwoNumbers.cpp
 	)
-SETUP_SAMPLE_END(AddTwoNumbers)
+SETUP_SAMPLE_END(2_AddTwoNumbers)
+
+SETUP_SAMPLE_START(3_LongestSubstringWithoutRepeatingCharacters)
+	SET(SOURCE_FILES
+		3_LongestSubstringWithoutRepeatingCharacters.cpp
+	)
+SETUP_SAMPLE_END(3_LongestSubstringWithoutRepeatingCharacters)
