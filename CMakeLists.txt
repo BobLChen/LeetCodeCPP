@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 2.8)
 
 project(LeetCode)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
 MACRO(SETUP_SAMPLE_START EXE_NAME)
 	UNSET(SOURCE_FILES)
 	UNSET(HEADER_FILES)
@@ -36,3 +38,9 @@ SETUP_SAMPLE_START(3_LongestSubstringWithoutRepeatingCharacters)
 		3_LongestSubstringWithoutRepeatingCharacters.cpp
 	)
 SETUP_SAMPLE_END(3_LongestSubstringWithoutRepeatingCharacters)
+
+SETUP_SAMPLE_START(4_MedianofTwoSortedArrays)
+	SET(SOURCE_FILES
+		4_MedianofTwoSortedArrays.cpp
+	)
+SETUP_SAMPLE_END(4_MedianofTwoSortedArrays)
